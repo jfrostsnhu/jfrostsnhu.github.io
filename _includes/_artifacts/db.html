@@ -1,0 +1,69 @@
+      <!-- Artifact Card for Enhancement DB -->
+      <article class="artifact-card" id="dbCard">
+        <div class="card-header">
+          <img src="/assets/img/Database.png" alt="Database" class="card-img-top">
+        </div>
+        <div class="card-body">
+          <div class="d-flex justify-content-end mb-2">
+            <button class="btn btn-sm btn-outline-blue" id="toggleAllDB">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icon-git mr-2" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M3.646 10.146a.5.5 0 0 1 .708 0L8 13.793l3.646-3.647a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 0-.708m0-4.292a.5.5 0 0 0 .708 0L8 2.207l3.646 3.647a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 0 0 0 .708M1 8a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 8"/>
+              </svg>
+              Expand All
+            </button>
+          </div>
+          <h3 class="card-title">
+          <button class="btn-collapsible collapsed" type="button" data-toggle="collapse" data-target="#ar3Collapse" aria-expanded="false"
+          aria-controls="ar3Collapse"><i class="fas fa-chevron-right rotate-icon mr-2 ipadr"></i> Artifact</h3>
+          <div id="ar3Collapse" class="collapse">
+            <p class="card-text indent">For this enhancement, I'm using the same artifact which is the Inventory Manager Android application developed in CS-360 
+              Mobile Programming between April and June 2024. The initial implementation utilized a local SQLite database which was effective for lightweight   applications but lacked scalability, availability, and multi-user access capabilities. While SQLite functioned well for a standalone mobile   application it did not fit the bill of an enterprise-ready solution. As the project evolved into a web-based application, a more robust and   scalable database infrastructure was necessary to ensure data integrity, concurrency control, and secure multi-user access.</p>
+            <hr>
+          </div>
+          <h3 class="card-title">
+          <button class="btn-collapsible collapsed" type="button" data-toggle="collapse" data-target="#enh3Collapse" aria-expanded="false"
+          aria-controls="enh3Collapse"><i class="fas fa-chevron-right rotate-icon mr-2 ipadr"></i> Enhancement 3</h3>
+          <div id="enh3Collapse" class="collapse">
+            <p class="card-text indent">To align the project with enterprise-level standards I migrated the database from SQLite to Microsoft SQL Server, a 
+              powerful, scalable, and secure relational database management system. This enhancement improved performance, security, and data availability,   enabling the application to support multiple users across web and mobile platforms. Additionally, I integrated Entity Framework as an 
+              Object-Relational Mapping tool to ensure efficient, maintainable, and secure database operations. The new database structure was designed with  normalized tables, incorporating primary and foreign keys to enforce referential integrity and reduce redundancy. This change ensures data   consistency while allowing for scalable interactions between multiple services. Furthermore, security best practices were implemented,  including parameterized queries to prevent SQL injection attacks, ensuring that user input is securely processed.</p>
+            <hr>
+          </div>
+          <h3 class="card-title">
+          <button class="btn-collapsible collapsed" type="button" data-toggle="collapse" data-target="#bp3Collapse" aria-expanded="false"
+          aria-controls="bp3Collapse"><i class="fas fa-chevron-right rotate-icon mr-2 ipadr"></i> Business Purpose</h3>
+          <div id="bp3Collapse" class="collapse">
+            <p class="card-text indent">Migrating to Microsoft SQL Server enhances the system's security, scalability, and reliability, making it a more viable solution for businesses managing larger inventories. The ability to handle multiple 
+              concurrent users ensures that inventory updates can be performed simultaneously across different devices, improving operational efficiency. With remote access capabilities, businesses can securely manage inventory from any 
+              location, supporting modern distributed work environments. Additionally, integrating Entity Framework streamlines database interactions, reduces development complexity and ensures future enhancements easier to implement 
+              and maintain.</p>
+            <hr>
+          </div>
+          <h3 class="card-title">
+          <button class="btn-collapsible collapsed" type="button" data-toggle="collapse" data-target="#cr3Collapse" aria-expanded="false"
+          aria-controls="cr3Collapse"><i class="fas fa-chevron-right rotate-icon mr-2 ipadr"></i> Challenges and Reflection</h3>
+          <div id="cr3Collapse" class="collapse">
+            <p class="card-text indent">This enhancement required a deep understanding of database migration processes and the differences between SQLite and SQL Server. The transition involved modifying SQL queries, designing normalized relational tables, and adapting the data access layer to work seamlessly with Entity Framework and LINQ queries. Additionally, ensuring data integrity during migration was an essential aspect, requiring  thorough testing to confirm that all records were transferred accurately without loss or corruption. </p>
+            <p class="card-text indent">Through this process, I successfully  demonstrated Course Outcome 4 by implementing modern database technologies such as Microsoft SQL Server, Entity Framework, and advanced LINQ queries, improving the efficiency and scalability of database operations. I also addressed Outcome 5 by incorporating security best ractices, such as parameterized queries and encryption techniques through password hashing and salting to protect sensitive data. Furthermore, through the incorporation of feedback and publishing my work in a clear, publicly accessible, collaborative environment, I have also achieved Outcome 1.
+            </p>
+            <hr>
+          </div>
+          <h3 class="card-title">
+          <button class="btn-collapsible collapsed" type="button" data-toggle="collapse" data-target="#dbdCollapse" aria-expanded="false"
+          aria-controls="dbdCollapse"><i class="fas fa-chevron-right rotate-icon mr-2 ipadr"></i> Database Diagram</h3>
+          <div id="dbdCollapse" class="collapse">
+            <div style="text-align: center;">
+              <img src="/assets/img/DatabaseDiagram.png" alt="Database Diagram" class="img-fluid" style="max-width: 100%; height: auto;">
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- Button to Top -->
+      <div class="d-flex justify-content-end mb-3">
+        <button class="btn btn-sm btn-blue" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="icon-git-light mr-2" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5"/>
+          </svg>
+          Back to Top
+        </button>
+      </div>

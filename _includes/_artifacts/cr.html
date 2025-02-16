@@ -1,0 +1,78 @@
+      <!-- Artifact Card for Code Review -->
+      <article class="artifact-card" id="crCard">
+        <div class="card-header">
+          <img src="/assets/img/CodeReview.png" alt="Code Review" class="card-img-top">
+        </div>
+        <div class="card-body">
+            <div class="d-flex justify-content-end mb-2">
+              <button class="btn btn-sm btn-outline-blue" id="toggleAllCR">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icon-git mr-2" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M3.646 10.146a.5.5 0 0 1 .708 0L8 13.793l3.646-3.647a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 0-.708m0-4.292a.5.5 0 0 0 .708 0L8 2.207l3.646 3.647a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 0 0 0 .708M1 8a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 8"/>
+                </svg>
+                Expand All
+              </button>
+            </div>
+          <h3 class="card-title mb-3">
+            <button class="btn-collapsible collapsed" type="button" data-toggle="collapse" data-target="#croCollapse" aria-expanded="false"
+                    aria-controls="croCollapse"><i class="fas fa-chevron-right rotate-icon mr-2 ipadr"></i> Overview</h3>
+          <div id="croCollapse" class="collapse">
+            <p class="card-text indent">Code reviews, also known as peer reviews, are a vital step in the software development lifecycle. They provide a systematic 
+              assessment of code to improve quality, identify bugs, enhance security, and ensure adherence to coding standards before merging changes into a 
+              production environment. By incorporating code reviews into a team's workflow, developers can share knowledge, maintain compliance, and foster 
+              collaboration. Code reviews not only help catch issues early in the development process but also facilitate continuous learning among team members, 
+              making them an essential practice in software engineering.</p>
+            <hr>
+          </div>
+          <h3 class="card-title mb-3">
+            <button class="btn-collapsible collapsed" type="button" data-toggle="collapse" data-target="#acrCollapse" aria-expanded="false"
+                    aria-controls="acrCollapse"><i class="fas fa-chevron-right rotate-icon mr-2 ipadr"></i> Artifact Code Review</h3>
+            <div id="acrCollapse" class="collapse">
+              <p class="card-text indent">As part of my Capstone project, I conducted a code review of an Inventory Management Android application that I developed last year. 
+                The purpose of this review was to evaluate the current implementation, identify areas for improvement, and determine the best approach for enhancing 
+                security, efficiency, and maintainability. To systematically assess the application, I focused on five key areas including functionality, structure, 
+                security, database interactions, and performance. I began with a user experience assessment, testing login, inventory management, and notifications not 
+                only to demonstrate the app but also to evaluate how well the core features functioned. Next, I conducted a code structure review identifying areas that 
+                needed improved modularity and readability. My security audit revealed vulnerabilities such as storing user roles in plaintext SharedPreferences and a 
+                lack of input validation for all fields. The database review highlighted outdated query methods, particularly the use of the Cursor API instead of a 
+                modern ORM as well as missing CRUD operations for user management. Lastly, the performance analysis identified inefficiencies in linear searches for 
+                inventory tracking which could be optimized using better data structures. While the original artifact successfully implements its core functionality, 
+                several areas require optimization, particularly expanding CRUD operations, improving security mechanisms, and refining database interactions.</p>
+                <p class="card-text"><strong>Summary of Key Findings:</strong></p>
+                <ul class="card-text">
+                  <li>Methods like onCreate() violate the Single Responsibility Principle and need refactoring.</li>
+                  <li>Consistent naming conventions used, but long lines reduce readability.</li>
+                  <li>User roles stored in plaintext SharedPreferences, making them vulnerable to tampering.</li>
+                  <li>No input validation for email format or password strength.</li>
+                  <li>Lacks encryption for sensitive data.</li>
+                  <li>Uses outdated Cursor API instead of a modern ORM such as Room for improved database efficiency.</li>
+                  <li>Limited user management (no ability to add, edit, or delete users).</li>
+                  <li>Inefficient inventory processing uses linear searches for low-stock alerts.</li>
+                  <li>Hardcoded strings reduce maintainability.</li>
+                </ul>
+              <p class="card-text"><strong>Watch my full Code Review video below:</strong></p>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/kh6HDyalhuY?si=ACmY4D3u2YLwN681" title="Code Review Video" 
+                  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  referrerpolicy="strict-origin-when-cross-origin" class="ytvideo" allowfullscreen></iframe>
+                  <div class="text-center mt-4">
+                    <a href="https://github.com/jfrostsnhu/CS-360-MobileArchitectAndProgramming.git"
+                       target="_blank" rel="noopener"
+                       class="btn btn-outline-blue d-inline-flex align-items-center">
+                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="icon-git mr-2" viewBox="0 0 16 16">
+                        <path d="M15.698 7.287 8.712.302a1.03 1.03 0 0 0-1.457 0l-1.45 1.45 1.84 1.84a1.223 1.223 0 0 1 1.55 1.56l1.773 1.774a1.224 1.224 0 0 1 1.267 2.025 1.226 1.226 0 0 1-2.002-1.334L8.58 5.963v4.353a1.226 1.226 0 1 1-1.008-.036V5.887a1.226 1.226 0 0 1-.666-1.608L5.093 2.465l-4.79 4.79a1.03 1.03 0 0 0 0 1.457l6.986 6.986a1.03 1.03 0 0 0 1.457 0l6.953-6.953a1.03 1.03 0 0 0 0-1.457"/>
+                      </svg>
+                      <strong>View Original Artifact on GitHub</strong>
+                    </a>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </article>
+      <!-- Button to Top -->
+      <div class="d-flex justify-content-end mb-3">
+        <button class="btn btn-sm btn-blue" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="icon-git-light mr-2" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5"/>
+          </svg>
+          Back to Top
+        </button>
+      </div>

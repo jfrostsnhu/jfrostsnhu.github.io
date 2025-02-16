@@ -1,0 +1,67 @@
+---
+layout: page
+---
+
+{{ content }}
+<hr class="header">
+<!-- Self-Introduction Section -->
+<h1>Introduction</h1>
+<p>Hello Visitor!</p>
+<p class="indent">  My name is James, welcome to my ePortfolio. I have been in the technology industry for over 16 years. 
+  I have always been passionate about solving complex problems through technology, and I thrive in an environment 
+  where I am challenged to learn and adapt to emerging trends. The ever-evolving tech industry keeps me engaged, 
+  continuously learning, and implementing innovative, secure solutions to solve client challenges. My experience 
+  spans technical support, software development, and DevOps, allowing me to seamlessly bridge the gap between 
+  business needs and technical implementation. To learn more about me, visit my <a href="aboutme">About Me</a> page,
+  and feel free to reach out via email!</p>
+<hr>
+<!-- Artifacts / Portfolio Cards Section -->
+<section class="artifacts-section">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center mb-2">
+        <div>
+          <!-- Card Jump Menu -->
+          <button class="btn btn-sm btn-blue mr-2"
+                  onclick="document.getElementById('psaCard').scrollIntoView({ behavior: 'smooth' })">
+          Self-Assessment
+          </button>
+          <button class="btn btn-sm btn-blue mr-2"
+                  onclick="document.getElementById('crCard').scrollIntoView({ behavior: 'smooth' })">
+          Code Review
+          </button>
+          <button class="btn btn-sm btn-blue"
+                  onclick="document.getElementById('sdeCard').scrollIntoView({ behavior: 'smooth' })">
+          Enh - 1
+          </button>
+          <button class="btn btn-sm btn-blue"
+          onclick="document.getElementById('dsaCard').scrollIntoView({ behavior: 'smooth' })">
+          Enh - 2
+          </button>
+          <button class="btn btn-sm btn-blue"
+          onclick="document.getElementById('dbCard').scrollIntoView({ behavior: 'smooth' })">
+          Enh - 3
+          </button>
+          <button class="btn btn-sm btn-blue"
+          onclick="document.getElementById('eaCard').scrollIntoView({ behavior: 'smooth' })">
+          Enhanced Artifact
+          </button>
+        </div>
+      </div>
+      <hr>
+      <div class="d-flex justify-content-end mb-2">
+          <button class="btn btn-sm btn-blue" id="toggleAllCards">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="icon-git-light mr-2" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M3.646 10.146a.5.5 0 0 1 .708 0L8 13.793l3.646-3.647a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 0-.708m0-4.292a.5.5 0 0 0 .708 0L8 2.207l3.646 3.647a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 0 0 0 .708M1 8a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 8"/>
+            </svg>
+            Expand All
+          </button>
+      </div>
+      <!-- Render each card separately -->
+      {% include _artifacts/psa.html %}
+      {% include _artifacts/cr.html %}
+      {% include _artifacts/sde.html %}
+      {% include _artifacts/dsa.html %}
+      {% include _artifacts/db.html %}
+      {% include _artifacts/ea.html %}
+    </div>
+</section>

@@ -1,0 +1,55 @@
+{% if site.social-network-links %}
+<ul class="list-inline text-center footer-links">
+
+{%- for network in site.social-network-links -%}
+
+  {%- if network[0] == "rss" and network[1] and site.rss-description -%}
+  <li class="list-inline-item">
+    <a href="{{ '/feed.xml' | relative_url }}" title="RSS">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">RSS</span>
+    </a>
+  </li>
+  {%- endif -%}
+
+  {%- if network[0] == "email" -%}
+  <li class="list-inline-item">
+    <a href="mailto:{{ network[1] }}" title="Email me">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">Email me</span>
+   </a>
+  </li>
+  {%- endif -%}
+
+  {%- if network[0] == "github" -%}
+  <li class="list-inline-item">
+    <a href="https://github.com/{{ network[1] }}" title="GitHub">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">GitHub</span>
+   </a>
+  </li>
+  {%- endif -%}
+
+  {%- if network[0] == "youtube" -%}
+  <li class="list-inline-item">
+    <a href="https://www.youtube.com/{{ network[1] }}" title="YouTube">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">YouTube</span>
+   </a>
+  </li>
+  {%- endif -%}
+ {% endfor %}
+</ul>
+{% endif %}

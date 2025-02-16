@@ -1,0 +1,101 @@
+###########################################################
+###              Configuration Parameters               ###
+###########################################################
+
+############################
+# --- Required options --- #
+############################
+
+# Name of website
+title: James Frost
+
+# Your name to show in the footer
+author: James Frost
+
+###############################################
+# --- List of links in the navigation bar --- #
+###############################################
+
+navbar-links:
+  Inventory Manager: "https://inventorymanager.jamesfrost.dev"
+  Enhancement Code:
+    - Enhancement 1: "https://github.com/jfrostsnhu/CS-499-Computer-Science-Capstone/tree/master/InventoryManagerApp/Components"
+    - Enhancement 2: "https://github.com/jfrostsnhu/CS-499-Computer-Science-Capstone/blob/master/InventoryManagerApp/Data/NotificationsAVLTree.cs"
+    - Enhancement 3: "https://github.com/jfrostsnhu/CS-499-Computer-Science-Capstone/tree/master/InventoryManagerApp/Data"
+  Artifacts:
+    - Original Artifact: "https://github.com/jfrostsnhu/CS-360-MobileArchitectAndProgramming"
+    - Enhanced Artifact: "https://github.com/jfrostsnhu/CS-499-Computer-Science-Capstone/tree/master/InventoryManagerApp"
+  About Me: "aboutme"
+
+################
+# --- Logo --- #
+################
+
+# Image to show in the navigation bar
+logoimg: "/assets/img/JFLogo.png"
+round-logoimg: false
+
+#####################################
+# --- Footer social media links --- #
+#####################################
+
+social-network-links:
+  email: "james@jamesfrost.dev"
+  github: jfrostsnhu
+  youtube: "@JFSNHU"
+
+
+###########################
+# --- General options --- #
+###########################
+
+# Display the link to the website in the footer
+url-pretty: "eportfolio.jamesfrost.dev"
+
+# Add the website title to the title of every page
+title-on-all-pages: true
+
+######################################
+# --- Colours / background image --- #
+######################################
+
+# Personalize the colours in the website.
+
+page-col: "#A4ABBD"
+text-col: "#33415C"
+link-col: "#F1F1E6"
+hover-col: "#707788"
+navbar-col: "#33415C"
+navbar-text-col: "#A4ABBD"
+navbar-border-col: "#707788"
+footer-col: "#33415C"
+footer-text-col: "#A4ABBD"
+footer-link-col: "#A4ABBD"
+footer-hover-col: "#707788"
+
+################
+# --- Misc --- #
+################
+
+# Ruby Date Format to show dates of posts
+date_format: "%B %-d, %Y"
+
+# Include _artifacts collection
+collections:
+  artifacts:
+    output: true
+
+# Exclude these files from production site
+exclude:
+  - CHANGELOG.md
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - docs/
+
+plugins:
+  - jekyll-sitemap
+
+
