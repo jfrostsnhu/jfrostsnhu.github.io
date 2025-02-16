@@ -25,6 +25,11 @@ navbar-links:
   Artifacts:
     - Original Artifact: "https://github.com/jfrostsnhu/CS-360-MobileArchitectAndProgramming"
     - Enhanced Artifact: "https://github.com/jfrostsnhu/CS-499-Computer-Science-Capstone/tree/master/InventoryManagerApp"
+  Narratives:
+    - Enhancement Plan: "https://github.com/jfrostsnhu/jfrostsnhu.github.io/blob/main/_includes/_artifacts/Narratives/Enhancment%20Plan.docx"
+    - Enhancement 1: "https://github.com/jfrostsnhu/jfrostsnhu.github.io/blob/main/_includes/_artifacts/Narratives/Enhancment1_Narrative.docx"
+    - Enhancement 2: "https://github.com/jfrostsnhu/jfrostsnhu.github.io/blob/main/_includes/_artifacts/Narratives/Enhancment2_Narrative.docx"
+    - Enhancement 3: "https://github.com/jfrostsnhu/jfrostsnhu.github.io/blob/main/_includes/_artifacts/Narratives/Enhancement3_Narrative.docx"
   About Me: "aboutme"
 
 ################
