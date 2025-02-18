@@ -6,7 +6,9 @@ subtitle: Who is James Frost?
 
 # Hey there!
 
- My name is James. I am an undergraduate in my senior year at Southern New Hampshire University. I have worked in just about every industry prior to settling in technology and I've been working in this field for over 16 years. Two things I love most about technology is the challenge in resolving complex issues and the opportunity to learn new things each day. 
+ My name is James. I am an undergraduate in my senior year at Southern New Hampshire University. I have worked in just about every 
+ industry prior to settling in technology and I've been working in this field for over 16 years. Two things I love most about technology 
+ is the challenge in resolving complex issues and the opportunity to learn new things each day. 
 
 ## Fun facts about me:
 

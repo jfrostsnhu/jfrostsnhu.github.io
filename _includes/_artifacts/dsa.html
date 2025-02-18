@@ -7,7 +7,9 @@
           <div class="d-flex justify-content-end mb-2">
             <button class="btn btn-sm btn-outline-blue" id="toggleAllDSA">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icon-git mr-2" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M3.646 10.146a.5.5 0 0 1 .708 0L8 13.793l3.646-3.647a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 0-.708m0-4.292a.5.5 0 0 0 .708 0L8 2.207l3.646 3.647a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 0 0 0 .708M1 8a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 8"/>
+                <path fill-rule="evenodd" d="M3.646 10.146a.5.5 0 0 1 .708 0L8 13.793l3.646-3.647a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 
+                0-.708m0-4.292a.5.5 0 0 0 .708 0L8 2.207l3.646 3.647a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 0 0 0 .708M1 8a.5.5 0 0 1 
+                .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 8"/>
               </svg>
               Expand All
             </button>
@@ -16,11 +18,12 @@
           <button class="btn-collapsible collapsed" type="button" data-toggle="collapse" data-target="#ar2Collapse" aria-expanded="false"
           aria-controls="ar2Collapse"><i class="fas fa-chevron-right rotate-icon mr-2 ipadr"></i> Artifact</h3>
           <div id="ar2Collapse" class="collapse">
-            <p class="card-text indent">For this enhancement, I'm using the same artifact which is the Inventory Manager Android application developed in CS-360 Mobile Programming 
-            between April and June 2024. The application includes a low-stock notification system, which was initially implemented using a linear search  algorithm with O(n) 
-            complexity. This approach required scanning the entire dataset sequentially, making it increasingly inefficient as the dataset grew. While  functional for small product
-            catalogs, this method did not scale well for larger datasets and resulted in performance bottlenecks as the number of inventory items increased. I selected this artifact 
-            because it provides an ideal opportunity to showcase my ability to analyze and implement efficient data structures for real-world performance optimization. </p>
+            <p class="card-text indent">For this enhancement, I'm using the same artifact which is the Inventory Manager Android application developed in 
+              CS-360 Mobile Programming between April and June 2024. The application includes a low-stock notification system, which was initially implemented 
+              using a linear search algorithm with O(n) complexity. This approach required scanning the entire dataset sequentially, making it increasingly 
+              inefficient as the dataset grew. While functional for small product catalogs, this method did not scale well for larger datasets and resulted in 
+              performance bottlenecks as the number of inventory items increased. I selected this artifact because it provides an ideal opportunity to showcase 
+              my ability to analyze and implement efficient data structures for real-world performance optimization. </p>
             <hr>
           </div>
           <h3 class="card-title">
@@ -28,11 +31,12 @@
           aria-controls="enh2Collapse"><i class="fas fa-chevron-right rotate-icon mr-2 ipadr"></i> Enhancement 2</h3>
           <div id="enh2Collapse" class="collapse">
             <p class="card-text indent">To improve system performance and scalability, I integrated an AVL Tree, a self-balancing binary search tree that ensures  
-              efficient lookup, insertion, and deletion operations by maintaining a time complexity of O(log n). Unlike a standard BST, which can become unbalanced and degrade to O(n) search 
-              time in the worst case, the AVL Tree automatically balances itself through rotations which ensures consistently optimal search performance. This enhancement allows the system to 
-              remain responsive and scalable, regardless of inventory size. Moreover, it showcases my ability to evaluate algorithm trade-offs and optimize search operations for real-world applications.
-              Additionally, to illustrate the benefits of the AVL Tree, I provided a side-by-side comparison of the linear search and AVL search algorithm tasks execution times. As shown, the AVL Tree 
-              consistently performed faster, demonstrating the real-world performance benefits of the enhancement.</p>
+              efficient lookup, insertion, and deletion operations by maintaining a time complexity of O(log n). Unlike a standard BST, which can become unbalanced 
+              and degrade to O(n) search time in the worst case, the AVL Tree automatically balances itself through rotations which ensures consistently optimal 
+              search performance. This enhancement allows the system to remain responsive and scalable, regardless of inventory size. Moreover, it showcases my 
+              ability to evaluate algorithm trade-offs and optimize search operations for real-world applications. Additionally, to illustrate the benefits of the 
+              AVL Tree, I provided a side-by-side comparison of the linear search and AVL search algorithm tasks execution times. As shown, the AVL Tree consistently 
+              performed faster, demonstrating the real-world performance benefits of the enhancement.</p>
             <hr>
           </div>
           <h3 class="card-title">
@@ -40,23 +44,32 @@
           aria-controls="bp2Collapse"><i class="fas fa-chevron-right rotate-icon mr-2 ipadr"></i> Business Purpose</h3>
           <div id="bp2Collapse" class="collapse">
             <p class="card-text indent">This enhancement provides significant business benefits particularly for companies with large inventories. By improving the 
-              efficiency of low-stock alerts, employees can quickly identify inventory shortages, allowing for faster restocking or reordering. The reduced   computational overhead ensures that as the inventory grows, the system remains highly responsive, preventing performance degradation over time.  For businesses managing thousands of inventory items, this enhancement translates to increased operational efficiency, ensuring that stock   levels are monitored in real-time without delays.</p>
+              efficiency of low-stock alerts, employees can quickly identify inventory shortages, allowing for faster restocking or reordering. The reduced computational 
+              overhead ensures that as the inventory grows, the system remains highly responsive, preventing performance degradation over time. For businesses managing 
+              thousands of inventory items, this enhancement translates to increased operational efficiency, ensuring that stock levels are monitored in real-time without 
+              delays.</p>
             <hr>
           </div>
           <h3 class="card-title">
           <button class="btn-collapsible collapsed" type="button" data-toggle="collapse" data-target="#cr2Collapse" aria-expanded="false"
           aria-controls="cr2Collapse"><i class="fas fa-chevron-right rotate-icon mr-2 ipadr"></i> Challenges and Reflection</h3>
           <div id="cr2Collapse" class="collapse">
-            <p class="card-text indent">Implementing this enhancement required careful algorithm selection and trade-off analysis. While exploring options for 
-              improving search efficiency, I chose the AVL Tree specifically for its self-balancing properties, preventing the inefficiencies of an   unbalanced BST. The implementation required an in-depth understanding of tree rotations, balance factors, and recursive operations to ensure  that insertions and deletions maintained optimal balance. Debugging the tree operations and verifying correctness through extensive testing  were critical steps in refining the implementation.</p>
-            <p class="card-text indent">Through this process, I successfully demonstrated Course Outcome 3 by designing and implementing an optimized computing solution using  algorithmic principles while managing performance trade-offs. Additionally, by documenting the enhancement process, refining the code  structure, and ensuring clarity in my implementation details, I actively demonstrated Outcome 2. Finally, through the incorporation of feedback  and publishing my work in a clear, publicly accessible, collaborative environment, I have also achieved Outcome 1.</p>
+            <p class="card-text indent">Implementing this enhancement required careful algorithm selection and trade-off analysis. While exploring options for improving 
+              search efficiency, I chose the AVL Tree specifically for its self-balancing properties, preventing the inefficiencies of an unbalanced BST. The implementation 
+              required an in-depth understanding of tree rotations, balance factors, and recursive operations to ensure that insertions and deletions maintained optimal 
+              balance. Debugging the tree operations and verifying correctness through extensive testing were critical steps in refining the implementation.</p>
+            <p class="card-text indent">Through this process, I successfully demonstrated Course Outcome 3 by designing and implementing an optimized computing solution using 
+              algorithmic principles while managing performance trade-offs. Additionally, by documenting the enhancement process, refining the code  structure, and ensuring 
+              clarity in my implementation details, I actively demonstrated Outcome 2. Finally, through the incorporation of feedback and publishing my work in a clear, publicly 
+              accessible, collaborative environment, I have also achieved Outcome 1.</p>
             <hr>
           </div>
           <h3 class="card-title">
           <button class="btn-collapsible collapsed" type="button" data-toggle="collapse" data-target="#efgCollapse" aria-expanded="false"
           aria-controls="efgCollapse"><i class="fas fa-chevron-right rotate-icon mr-2 ipadr"></i> Evidence of Efficiency Gains</h3>
           <div id="efgCollapse" class="collapse">
-            <p class="card-text indent">To illustrate the benefits of the AVL Tree, I have provided screenshot of the log output from tasks of both the linear   search and AVL search algorithms with their execution times. The AVL Tree consistently performed faster demonstrating the real-world performance  improvements of the enhancement.</p>
+            <p class="card-text indent">To illustrate the benefits of the AVL Tree, I have provided screenshot of the log output from tasks of both the linear search and AVL 
+              search algorithms with their execution times. The AVL Tree consistently performed faster demonstrating the real-world performance improvements of the enhancement.</p>
             <a href="/assets/img/AVLvsLSA.png" target="_blank" rel="noopener">
               <div style="text-align: center;">
                 <img src="/assets/img/AVLvsLSA.png" alt="AVL vs Linear Search" class="img-fluid" style="max-width: 100%; height: auto;">

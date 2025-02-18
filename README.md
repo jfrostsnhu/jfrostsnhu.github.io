@@ -55,11 +55,11 @@ These experiences have helped refine my **problem-solving skills, technical expe
 
 Before implementing enhancements, I conducted a **formal code review** of my original **Android Inventory Manager** application. This review focused on:
 
-✔️ **Functionality** – Assessing core features such as login, inventory tracking, and role-based authentication.  
-✔️ **Code Structure** – Evaluating **readability, modularity, and maintainability**.  
-✔️ **Security** – Identifying vulnerabilities such as **plaintext credential storage** and **lack of input validation**.  
-✔️ **Database Optimization** – Noting the use of **inefficient database queries** and **lack of user management CRUD operations**.  
-✔️ **Performance** – Finding **linear search inefficiencies** in low-stock alerting.
+✔️ **Functionality** - Assessing core features such as login, inventory tracking, and role-based authentication.  
+✔️ **Code Structure** - Evaluating **readability, modularity, and maintainability**.  
+✔️ **Security** - Identifying vulnerabilities such as **plaintext credential storage** and **lack of input validation**.  
+✔️ **Database Optimization** - Noting the use of **inefficient database queries** and **lack of user management CRUD operations**.  
+✔️ **Performance** - Finding **linear search inefficiencies** in low-stock alerting.
 
 Key Findings:
 - 🔸 **Methods violated the Single Responsibility Principle**.
@@ -81,7 +81,7 @@ I converted the Android-based **Inventory Manager** into a **full-stack .NET 8 B
 
 ✅ **Blazor Components** replacing Android XML layouts  
 ✅ **Identity Framework** for **secure authentication & authorization**  
-✅ **Platform Independence** – Now accessible from **any device** with a web browser  
+✅ **Platform Independence** - Now accessible from **any device** with a web browser  
 
 💡 **Business Impact:**  
 🔹 Employees can now **manage inventory from any device**, improving workflow efficiency.  
