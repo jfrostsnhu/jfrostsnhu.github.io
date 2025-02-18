@@ -32,8 +32,9 @@
               This enhancement involved converting the Android-based Inventory Manager into a full-stack .NET 8 Blazor Server application transforming it from a 
               platform-dependent mobile app to a scalable, web-accessible solution. The front-end was migrated from Android XML layouts to Blazor components, allowing
               users to access the system from any device with a web browser. Additionally, Identity Framework was integrated to introduce secure role-based 
-              authentication and authorization ensuring that user permissions are managed more effectively.
-              This enhancement greatly improved the usability, scalability, and security of the application. By migrating to Blazor Server, the system is now 
+              authentication and authorization ensuring that user permissions are managed more effectively.Furthermore, I integrated Entity Framework and replaced
+              the SQLite database with a MS SQL Server for enhanced scalability and remove connectivity, while also implementing an AVL tree algorithm to efficiently manage
+              low-stock noticiations. This enhancement greatly improved the usability, scalability, and security of the application. By migrating to Blazor Server, the system is now 
               platform independent, allowing employees to manage inventory from any device with internet access. Security was also a major focus, with Identity 
               Framework ensuring encrypted authentication, input validation preventing invalid or malicious data entry, and structured error handling improving system 
               stability.</p>
@@ -55,9 +56,10 @@
           <button class="btn-collapsible collapsed" type="button" data-toggle="collapse" data-target="#cr1Collapse" aria-expanded="false"
           aria-controls="cr1Collapse"><i class="fas fa-chevron-right rotate-icon mr-2 ipadr"></i> Challenges and Relection</h3>
           <div id="cr1Collapse" class="collapse">           
-            <p class="card-text indent">The process of enhancing this artifact was a significant learning experience. Transitioning from .NET Core 3 to .NET 8   required adapting 
-              to the removal of namespaces and top-level statements reinforcing my ability to learn and adapt to new technologies. As a first time Blazor   developer, I faced 
-              challenges in structuring components, customizing UI elements, and overriding Bootstrap styles. Overcoming these challenges strengthened my   problem-solving 
+            <p class="card-text indent">The process of enhancing this artifact was a significant learning experience. Transitioning from .NET Core 3 to .NET 8 required adapting 
+              to the removal of namespaces and top-level statements reinforcing my ability to learn and adapt to new technologies. Being my first time working with Blazor, I faced 
+              challenges in structuring components, customizing UI elements, and overriding Bootstrap styles. Additionally, I encountered challenges in refining the HTML and CSS for 
+              a more polished interface, as well as implementing search and pagination functionalities. Overcoming these challenges strengthened my problem-solving 
               skills, technical expertise, and ability to integrate complex solutions into a functional and scalable application.</p>
             <p class="card-text indent">Through this enhancement, I successfully demonstrated Course Outcomes 2 through 5. I applied professional communication skills by documenting   the development 
               process and explaining technical concepts for diverse audiences, addressing Outcome 2. My ability to use modern tools and frameworks, such as Blazor Server, Entity Framework, and Identity Framework, demonstrated Outcome 4. Additionally, I achieved Outcome 5 through a security-focused design,   incorporating 
